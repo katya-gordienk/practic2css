@@ -2,7 +2,7 @@
 /* <!--   Урок 4  -->
   <!-- Завдання №1. Змініть колір тексту на червоний та фон на жовтий, коли користувач наведе курсор миші на кнопку  -->
   <!--  Використовуйте цей селектор :hover--> */
-  .lesson-four-task-one button:hover {
+  .lesson-four-task-one .btn:hover {
     color: red;
     background-color:yellow;
     }
@@ -12,7 +12,7 @@
   <!--  Використовуйте цей селектор :hover-->
  */
 
- a:hover + .title {
+ .lesson-four-task-two .link:hover + .title {
     background-color:green;
  }
 
@@ -22,7 +22,7 @@
           тому легше всього пройти тут -->
   <!--  Використовуйте цей селектор :visited-->
  */
- .lesson-four-task-three a:visited {
+ .lesson-four-task-three .link:visited {
     color: yellow;
  }
 
@@ -34,7 +34,7 @@
         тому легше всього пройти тут -->
   <!--      Використовуйте цей селектор :link --> */
 
-  #sidebar a:link {
+ .lesson-four-task-four .link:link {
     color:red;
 }
 
@@ -42,7 +42,7 @@
 
   <!--      Використовуйте цей селектор :active -->*/
 
-  .btn:active {
+ .lesson-four-task-five .btn:active {
     color: blue;
   }
 
@@ -50,7 +50,7 @@
 
   <!--      Використовуйте цей селектор :focus --> */
 
-.btn:focus {
+.lesson-four-task-six .btn:focus {
     background-color: orange;
     color: orange;
 }
@@ -59,7 +59,7 @@
   який вказаний в URL як фрагмент, на зелений, коли на нього встановлюється :target: -->
 
   <!--      Використовуйте цей селектор :target --> */
-#target:target {
+  .lesson-four-task-seven #target:target {
 color: green;
 background:green;
 }
@@ -69,8 +69,7 @@ background:green;
   <!--      Використовуйте цей селектор :checked --> */
 
 
-#checkbox:checked +
-#target {
+  .lesson-four-task-eight #checkbox:checked ~ div {
     background-color: blue;
     color: white;
 }
@@ -78,11 +77,11 @@ background:green;
   /* <!--    Завдання №9. Змінити колір тексту на синій для усіх елементів на сторінці, які написані українською мовою. -->
   <!--      Використовуйте цей селектор :lang() --> */
 
-p:lang(uk) {
+  .lesson-four-task-ninep:lang(uk) {
 color: blue;
 }
 
-p:lang(en) {
+ .lesson-four-task-nine p:lang(en) {
  color: blue;
 }
 
@@ -91,7 +90,7 @@ p:lang(en) {
   <!--      Використовуйте цей селектор :enabled -->
  */
 
- *:enabled {
+ .lesson-four-task-ten input:enabled {
     color: red;
     background-color:yellow;
  }
@@ -100,12 +99,13 @@ p:lang(en) {
  /* <!--    Завдання №11. При використанні селектора :disabled змінити фоновий колір на жовтий в полях введення, які є неактивними.-->
 
   <!--      Використовуйте цей селектор :disabled --> */
-input:disabled {
+  .lesson-four-task-eleven input:disabled {
     background-color: yellow;
 }
-button[type='submit']:disabled {
+
+/* button[type='submit']:disabled {
     background-color: yellow;
-}
+} */
 
 *:disabled {
     background-color: yellow;
@@ -114,13 +114,13 @@ button[type='submit']:disabled {
   /* 
   <!--    Завдання №12. Встановіть жовтий фоновий колір для елементів <input>, що без атрибута readonly. -->
   <!--      Використовуйте цей селектор :read-write --> */
-input:read-write {
+.lesson-four-task-twelve input:read-write {
     background-color:yellow;
 }
 
   /* <!--  Завдання №13. Встановіть жовтий фоновий колір для інпуту з атрибутом readonly. -->
  */
- input:read-only {
+ .lesson-four-task-thirteen input:read-only {
     background-color:yellow;
 }
 
@@ -128,10 +128,10 @@ input:read-write {
  /*  <!--    Завдання №14. Зробіть поле вводу зеленим, коли введене значення коректне, і червоним - якщо ні. -->
   <!--      Використовуйте ці селектори :valid та :invalid   --> */
 
-input:valid {
+  .lesson-four-task-fourteen input:valid {
     background-color: green;
 }
- input:invalid {
+ .lesson-four-task-fourteen input:invalid {
     background-color: red;
 }
 
@@ -140,7 +140,7 @@ input:valid {
   яке не є обов'язковим для заповнення, і змінити його фон на червоний,. -->
 
   <!--      Використовуйте цей селектор :optional --> */
-textarea:optional {
+.lesson-four-task-fifteen #message:optional {
     background-color: red;
 }
 
@@ -150,7 +150,7 @@ textarea:optional {
 
   <!--      Використовуйте цей селектор :out-of-range --> */
 
-input:out-of-range {
+.bg-secondary:out-of-range {
     background-color:red;
 }
 
@@ -161,7 +161,7 @@ input:out-of-range {
 
 <!--      Використовуйте цей селектор :in-range--> */
 
-input:in-range {
+.bg-secondary:in-range {
     background-color: red;
 }
 
@@ -171,7 +171,7 @@ input:in-range {
   який зникає, коли користувач починає вводити. -->
   <!--      Використовуйте цей селектор :placeholder-shown-->
 */
-input:placeholder-shown {
+.lesson-four-task-eighteen input:placeholder-shown {
     background-color: red;
 }
 
@@ -182,7 +182,7 @@ input:placeholder-shown {
   який змінює колір тексту на білий та фоновий колір на жовтий при активному стані. -->
  */
 
-button:focus-within {
+ .lesson-four-task-nineteen button:focus-within {
     color: white;
     background-color: yellow;
 }
@@ -190,6 +190,6 @@ button:focus-within {
  /* <!--    Завдання №20. При валідації форми з помилкою, змінюйте колір фону на червоний. -->
   <!--      Використовуйте цей селектор :invalid--> */
 
-input:invalid {
+.lesson-four-task-twenty input:invalid {
     background-color: red;
 }
