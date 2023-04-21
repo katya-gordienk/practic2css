@@ -150,7 +150,7 @@ color: blue;
 
   <!--      Використовуйте цей селектор :out-of-range --> */
 
-.bg-secondary:out-of-range {
+  .bg-secondar:out-of-range {
     background-color:red;
 }
 
@@ -161,7 +161,7 @@ color: blue;
 
 <!--      Використовуйте цей селектор :in-range--> */
 
-.bg-secondary:in-range {
+.bg-secondaryt:in-range {
     background-color: red;
 }
 
